@@ -1,8 +1,89 @@
-#map {
-  height: 100%;
+html {
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
 }
-/* Optional: Makes the sample page fill the window. */
-html, body {
-  height: 100%;
+
+body {
   margin: 0;
-  padding: 0;
+  position: relative;
+}
+
+#map {
+  height: 50vh;
+  width: 90%;
+}
+
+.title {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .title {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: radial-gradient(farthest-corner at 4px 4px, #CDFEF8 0%, #F6AAF5 100%);
+    border-bottom-left-radius: 8px;
+    z-index: 99999;
+    margin-right: 5rem
+  }
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: radial-gradient(farthest-corner at 45px 45px, #FEF0CD 0%, #F6DAAA 100%);
+}
+
+.title h1 {
+  text-align: center;
+  background: #7D4E27;
+  color: #1A0C26;
+  /* padding: 1rem 1rem 1.5rem; */
+  /* line-height: 1; */
+}
+
+.title p,
+.leaflet-container a.leaflet-popup-close-button {
+  color: #4B3520;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Patrick Hand SC", sans-serif;
+  margin: 0;
+  line-height: 1.1;
+  color: #4B3520;
+  font-weight: 400;
+}
+
+p,
+.leaflet-popup-content p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: .2rem;
+  font-weight: 400;
+  color: #4B3520;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #A03728;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin: 1.5rem 0 1rem;
+}
+
+#neighborhoods {
+  padding: 0 1rem 1rem 1rem;
+  margin-top: 3;
+}

@@ -2,10 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <title>Food map</title>
   </head>
   <body>
-    <h1>FOOD MAP</h1>
+    <div class="container">
+      <h1>FOOD MAP</h1>
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+    </div>
 
+    </div>
+    <script>
+    window.onload=timeout;
+
+      function timeout(){
+        window.setTimeout("redirect()",3000)
+      }
+      function redirect(){
+        window.location="index.html"
+      return}
+
+
+    </script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
   </body>
 </html>
