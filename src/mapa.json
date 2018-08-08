@@ -143,6 +143,18 @@
       "direccion": "Av. Almte. Miguel Grau 139, Barranco",
       "foto": "https://lh5.googleusercontent.com/p/AF1QipNSf5qIaslk22WygNQapMKxsO1-GolBFul0Z4sF=w408-h306-k-no",
       "fotoMapa": "http://www.parcdesalutmar.cat/media/upload/imatges/planols/mapa_acces_caem.jpg"
+    },
+    {
+      "name": "Pizzeria Don Sabino",
+      "lat": -12.1830157,
+      "long": -76.9997487,
+      "neighborhood": "Chorrillos",
+      "ambiance": "4.3/5",
+      "flavor": "4.3/5",
+      "comments": "La atencion es muy buena.. cuenta con excelente limpieza de su local.. se lo recomiendo.",
+      "direccion": "Av. Jiron Guardia Civil Sur 504, Distrito de Chorrillos",
+      "foto": "https://lh5.googleusercontent.com/p/AF1QipPzYAi_Of_mt5hCi5Jm3nhPpU3WzlqKAziwywi5=w408-h544-k-no",
+      "fotoMapa": "http://www.parcdesalutmar.cat/media/upload/imatges/planols/mapa_acces_caem.jpg"
     }
   ]
 }
