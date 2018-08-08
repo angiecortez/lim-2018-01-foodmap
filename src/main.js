@@ -62,11 +62,11 @@ request.onload = function() {
     let comer = data.foods;
     comer.forEach(food => {
       console.log(food);
-
+      let exampleModalLong = document.getElementById('exampleModalLong');
     stringEmpty += `
     <div>
     <button type="button" class="btn btn-primary mt-3 w-100" data-toggle="modal" data-target="#exampleModalLong">
-    <img w-100 src="${food.foto}">${food.neighborhood}<br>${food.name}</button>
+    <img w-100 src="${food.foto}"><br><strong>${food.neighborhood}<hr>${food.name}</strong></button>
     </div>
     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -78,7 +78,7 @@ request.onload = function() {
               </button>
             </div>
             <div class="modal-body">
-            <img class="w-100" src="${food.fotoMapa}">
+            <img class="w-50" src="${food.fotoMapa}">
             <p><strong>Distrito:</strong>${food.direccion}</p>
             <p><strong>Ambiente:</strong>${food.ambiance}</p>
             <p><strong>Sabor:</strong>${food.flavor}</p>
