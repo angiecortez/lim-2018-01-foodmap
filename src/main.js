@@ -29,7 +29,7 @@ request.onload = function() {
   const informacion = document.getElementById('informacion');
   stringEmpty += `
   <div>
-  <button type="button" class="btn btn-primary mt-3 100" data-toggle="modal" data-target="#exampleModalLong">
+  <button type="button" class="btn btn-primary mt-5 w-100" data-toggle="modal" data-target="#exampleModalLong">
   <img w-100 src="${food.foto}">${food.neighborhood}</button>
   </div>
   <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
