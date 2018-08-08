@@ -70,7 +70,7 @@ request.onload = function() {
         exampleModalLong++;
         stringEmpty += `
 
-        <button type="button" class="btn btn-primary mt-3 ml-5" data-toggle="modal" data-target="#restaurant-${exampleModalLong}">
+        <button type="button" class="btn btn-secundary mt-3 ml-5" data-toggle="modal" data-target="#restaurant-${exampleModalLong}">
         <img src="${food.foto}"><br><strong>${food.neighborhood}<hr>${food.name}</strong></button>
 
         <div class="modal fade" id="restaurant-${exampleModalLong}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
