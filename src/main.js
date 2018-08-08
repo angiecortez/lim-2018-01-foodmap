@@ -16,12 +16,47 @@ myMap.setView([-12.0570522, -76.9418717], 12);
 
 // Make an XMLHttpRequest to the JSON data
 const request = new XMLHttpRequest();
-request.open('GET', 'data.JSON', true);
+request.open('GET', 'mapa.json', true);
 request.onload = function() {
   // Begin accessing JSON data here
   const data = JSON.parse(this.response);
 
-  // Reduce neighborhoods down to how many they are, and count them
+  let stringEmpty = '';
+  informacion.innerHTML = '';
+  const print = data.foods.forEach((food)=>{
+    console.log(food);
+    //para la parte lateral
+  const informacion = document.getElementById('informacion');
+  stringEmpty += `
+  <div>
+  <button type="button" class="btn btn-primary mt-3 100" data-toggle="modal" data-target="#exampleModalLong">
+  <img w-100 src="${food.foto}">${food.neighborhood}</button>
+  </div>
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">${food.name}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <img class="w-30" src="${food.fotoMapa}">
+          <p><strong>Distrito:</strong> ${food.neighborhood}</p>
+          <p><strong>Ambiente:</strong> ${food.ambiance}</p>
+          <p><strong>Sabor:</strong> ${food.flavor}</p>
+          <p><strong>Comentarios:</strong> ${food.comments}</p>
+          <hr>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">PEDIR AHORA</button>
+
+          </div>
+        </div>
+      </div>
+    </div>`
+  })
+informacion.innerHTML += stringEmpty;
+  // Suma la cantidad de distritos
     const neighborhoodCount = data.foods.reduce((sums, food) => {
     sums[food.neighborhood] = (sums[food.neighborhood] || 0) + 1;
     return sums;
